@@ -1,27 +1,52 @@
-# -Trader-Perfomance-vs-Market-Sentiment
+Trader Performance vs Market Sentiment
 
-Methodology-
-Cleaned and validated two datasets (market sentiment and trader data)
-Aligned both datasets at daily granularity
-Engineered trader-level daily metrics
-Compared behavior and performance across Fear and Greed regimes
+📌 Overview
+This project analyzes the relationship between Bitcoin market sentiment (Fear/Greed) and trader behavior and performance on the Hyperliquid platform.
+The objective is to derive actionable insights and simple predictive signals that can inform smarter trading strategies.
 
-Key Insights-
-Fear regimes penalize overactive traders and reduce win rates
-Greed regimes increase trade frequency and long bias
-Conservative traders maintain stable performance across regimes
+⚙️ Setup Instructions
+1️⃣ Clone the Repository
+git clone https://github.com/<your-username>/trader-sentiment-analysis.git
+cd trader-sentiment-analysis
+2️⃣ (Optional) Create a Virtual Environment
+python -m venv venv
+source venv/binactivate      # Mac/Linux
+venv\Scripts\activate        # Windows
+3️⃣ Install Dependencies
+pip install -r requirements.txt
 
-Actionable Strategies-
-Reduce trade frequency and risk exposure during Fear days
-Allow selective aggression during Greed days for disciplined traders
+📦 Required Libraries
+pandas
+numpy
+matplotlib
+seaborn
+scikit-learn
 
-Bonus-
-A simple logistic regression model was used to predict next-day trader profitability using sentiment and behavioral features.
+▶️ How to Run the Project
+Option 1: Run Locally (Jupyter Notebook)
+jupyter notebook
+Open Assignmnet-0.ipynb
+Run all cells from top to bottom
 
+Option 2: Run in Google Colab
+Upload Assignmnet-0.ipynb to Google Colab
+Upload dataset files into the data/ folder
 
-Conclusion
-This analysis explored how Bitcoin market sentiment influences trader behavior and performance on Hyperliquid.
+Run all cells sequentially
 
-Key findings show that trader activity, positioning, and profitability vary significantly across Fear and Greed regimes. Conservative behavior tends to outperform during Fear periods, while disciplined active traders benefit more during Greed periods.
+📝 Notes
+Analysis is performed at daily granularity to align trader behavior with market sentiment.
+The focus is on interpretability and actionable insights, not heavy model tuning.
+No external APIs or credentials are required.
 
-These insights can inform sentiment-aware risk management and trading strategies.
+🏁 Output
+Running the notebook will generate:
+Data quality summaries
+Visual comparisons between Fear and Greed regimes
+Trader behavior insights
+Actionable trading strategy recommendations
+A bonus predictive model for next-day profitability
+
+👤 Author
+Annarapu Virupaksh
+Data Science Intern Applicant – Primetrade.ai
